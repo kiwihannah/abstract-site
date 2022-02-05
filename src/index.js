@@ -46,7 +46,7 @@ class Board {
     publish(article) {
         if (!this.isDupName) {
             article.id = `${this.name}-${Math.random()}`;
-            console.log(article);
+            // console.log(article);
             article.createdDate = new Date().toISOString(); // ISO 8601 -> 2022-10-09T24:30:30.000Z
             article.isExistBoard = true; // 사용가능 게시글 기준
             this.articles.push(article);
