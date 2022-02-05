@@ -83,7 +83,6 @@ class Comment {
     constructor(construction) {
         if (construction['content'] && construction['author']) this.construction = construction;
         else throw new Error('content, author null값 안돼');
-        this.createdDate = '';
     }
 }
 
